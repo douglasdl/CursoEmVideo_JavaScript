@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste JavaScript</title>
+	<meta charset="utf-8"/>
+	<script>
+		function acendeLampada() {
+			//alert("Lâmpada acendeu");
+			document.getElementById("luz").src="_imagens/lampada-acesa.jpg";
+		}
+		function apagaLampada() {
+			//alert("Lâmpada apagou");
+			document.getElementById("luz").src="_imagens/lampada-apagada.jpg";
+		}
+		function quebraLampada() {
+			//alert("Lâmpada quebrou");
+			document.getElementById("luz").src="_imagens/lampada-quebrada.jpg";
+		}
+	</script>
+</head>
+<body>
+	<h1>Acenda a lâmpada</h1>
+	<img src="_imagens/lampada-apagada.jpg" id="luz" onclick="quebraLampada()" onmousemove="acendeLampada()" onmouseout="apagaLampada()"/>
+</body>
+</html>
